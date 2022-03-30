@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pro front end simpe</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./CssReset.css">
+  <link rel="icon" href="./icon/javascript.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="navbar">
+      <nav class="mnue">
+        <a href="#">Home</a>
+        <a href="#">Abou us</a>
+        <a href="#">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown
+              <span>
+                <img src="./icon/icons2.svg" alt="">
+              </span>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+        </a>
+        <a href="#">Gallry</a>
+        <a href="#">Resome</a>
+      </nav>
+      <div class="brand">
+        <img src="./icon/javascript.svg" alt="brand">
+      </div>
+    </div>
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./image/image1.jpg">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./image/slidet2.jpg">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./image/slidet3.jpg">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="up_arrow">
+      <a href="#">
+        <img src="./icon/icons2.svg" alt="up_arrow">
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="about_us">
+      <h3 class="title_abour_us">
+        The Title About Us
+      </h3>
+      <div class="text_about_us">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores inventore unde debitis numquam recusandae
+          nostrum minus rerum sunt magnam tempora minima necessitatibus fugiat quas sapiente nihil eveniet quia deleniti
+          asperiores officia sequi, quidem ex veniam hic? At aperiam numquam, obcaecati quidem repellat perferendis,
+          necessitatibus aliquam quae ut fugiat earum! Laudantium possimus, provident, similique optio perferendis modi
+          sit blanditiis odio adipisci reiciendis aliquid laboriosam omnis porro, corporis nemo vel ad saepe.</p>
+      </div>
+    </div>
+
+    <div class="gallry_container">
+      <h3 class="title_gallry">
+        Gallry
+      </h3>
+      <div class="gallry_self">
+        <div class="gallry_item">
+          <img src="./image/background01.jpg" alt="img">
+          <div class="discription_item">
+            <h3>title imgae</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, nihil.</p>
+          </div>
+        </div>
+        <div class="gallry_item">
+          <img src="./image/background02.jpg" alt="img">
+          <div class="discription_item">
+            <h3>title imgae</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, nihil.</p>
+          </div>
+        </div>
+        <div class="gallry_item">
+          <img src="./image/background03.jpg" alt="img">
+          <div class="discription_item">
+            <h3>title imgae</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, nihil.</p>
+          </div>
+        </div>
+        <div class="gallry_item">
+          <img src="./image/image1.jpg" alt="img">
+          <div class="discription_item">
+            <h3>title imgae</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, nihil.</p>
+          </div>
+        </div>
+        <div class="gallry_item">
+          <img src="./image/background2.jpg" alt="img">
+          <div class="discription_item">
+            <h3>title imgae</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, nihil.</p>
+          </div>
+        </div>
+        <div class="gallry_item">
+          <img src="./image/background1.jpg" alt="img">
+          <div class="discription_item">
+            <h3>title imgae</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, nihil.</p>
+          </div>
+        </div>
+        <div class="gallry_item">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="text_contanct">
+        <h3 class="title_contanct">
+          Concact with us
+        </h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ipsam neque minus? Eum mollitia excepturi nobis
+          voluptates alias reprehenderit voluptate at! Fuga, voluptate atque. Nulla odio at nemo earum dolorum.
+        </p>
+      </div>
+      <div class="input_email">
+        <input type="email" placeholder="Email ..." spellcheck="false">
+        <img src="./image/right-arrow.svg" alt="arrow">
+      </div>
+    </div>
+
+    <div class="skill">
+      <h3 class="title_skill">
+        The Skill Front End
+      </h3>
+      <div class="container_skill">
+        <div class="box_skill">
+          <img src="./icon/html.svg" alt="icon skill">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus praesentium sint cum culpa? Beatae
+            iste aperiam, eveniet error iusto laudantium!</p>
+        </div>
+        <div class="box_skill">
+          <img src="./icon/css.svg" alt="icon skill">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus praesentium sint cum culpa? Beatae
+            iste aperiam, eveniet error iusto laudantium!</p>
+        </div>
+        <div class="box_skill">
+          <img src="./icon/javascript.svg" alt="icon skill">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus praesentium sint cum culpa? Beatae
+            iste aperiam, eveniet error iusto laudantium!</p>
+        </div>
+        <div class="box_skill">
+          <img src="./icon/bootstrap.png" alt="icon skill" class="bootstrap_icon">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus praesentium sint cum culpa? Beatae
+            iste aperiam, eveniet error iusto laudantium!</p>
+        </div>
+        <div class="box_skill">
+          <img src="./icon/sass.svg" alt="icon skill">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus praesentium sint cum culpa? Beatae
+            iste aperiam, eveniet error iusto laudantium!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+   <div class="main_input">
+    <div class="login">
+      <div class="inputs">
+        <div class="top_input">
+          <h4 class="title_input">
+            Email
+          </h4>
+          <i class="fa fa-user"></i>
+        </div>
+        <input type="email" placeholder="Email ..." id="email_change">
+      </div>
+      <div class="inputs">
+        <div class="top_input">
+          <h4 class="title_input">
+            Password
+          </h4>
+          <i class="fa fa-eye eyes"></i>
+        </div>
+        <input type="password" placeholder="Password ..." class="password_change">
+      </div>
+      <div class="inputs">
+        <div class="top_input">
+          <h4 class="title_input" id="change_color_text_pasword">
+            Password
+          </h4>
+          <i class="fa fa-key"></i>
+        </div>
+        <input type="password" placeholder="Paswrd agien ..." class="second_password">
+      </div>
+      <div class="btn">
+        <a class="submit">
+          Sunmit
+        </a>
+        <a class="cancle">
+          Cancle
+        </a>
+      </div>
+    </div>
+
+    <div class="sugetsion">
+      <h3 class="title_sugestion">
+        Title Sugetsion
+      </h3>
+      <textarea name="sugetsion" id="sugetsion" cols="50" rows="10" placeholder="Please write your sugetsion" spellcheck="false"></textarea>
+    </div>
+   </div>
+
+    <div class="wave">
+      <img src="./image/wave.svg" alt="waves">
+    </div>
+  </footer>
+
+  <script src="./costum.js"></script>
+</body>
+
+</html>
